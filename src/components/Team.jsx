@@ -15,10 +15,10 @@ const Team = () => {
                     </div>
                 </div>
                 <div className="team-mid">
-                    <TeamMemberCard firstName="Kristine" lastName="Palmer" jobTitle="Chief Operation Officer" picture="/src/assets/images/kristine-palmer.png" />
-                    <TeamMemberCard firstName="Mark" lastName="Aubri" jobTitle="Senior Consultant" picture="/src/assets/images/mark-aubri.png" />
-                    <TeamMemberCard firstName="Kimberly" lastName="Hansen" jobTitle="Senior Consultant" picture="/src/assets/images/kimberly-hansen.png" />
-                    <TeamMemberCard firstName="Justin" lastName="Willoman" jobTitle="Senior Tech Consultant" picture="/src/assets/images/justin-willoman.png" />
+                    <TeamMemberCard memberName="Kristine Palmer" jobTitle="Chief Operation Officer" picture="/src/assets/images/kristine-palmer.png" />
+                    <TeamMemberCard memberName="Mark Aubri" jobTitle="Senior Consultant" picture="/src/assets/images/mark-aubri.png" />
+                    <TeamMemberCard memberName="Kimerly Hansen" jobTitle="Senior Consultant" picture="/src/assets/images/kimberly-hansen.png" />
+                    <TeamMemberCard memberName="Justin Willoman" jobTitle="Senior Tech Consultant" picture="/src/assets/images/justin-willoman.png" />
                 </div>
                 <div className="team-bottom">
                     <i className="fa-solid fa-circle"></i>

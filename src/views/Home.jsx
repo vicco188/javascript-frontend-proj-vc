@@ -9,6 +9,7 @@ import Services from '../components/Services'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Projects from '../components/Projects'
 import Team from '../components/Team'
+import Testimonials from '../components/Testimonials'
 const Home = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const Home = () => {
             <WhyChooseUs />
             <Projects />
             <Team />
+            <Testimonials />
         </main>
         <Footer />
     </>

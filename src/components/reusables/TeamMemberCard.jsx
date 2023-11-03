@@ -1,11 +1,10 @@
 import React from 'react'
-import kristine from "../../assets/images/kristine-palmer.png"
 
-const TeamMemberCard = ({firstName, lastName, jobTitle, picture}) => {
+const TeamMemberCard = ({memberName, jobTitle, picture}) => {
     return (
         <div className="team-member">
-            <img src={picture} alt="Kristine Palmer" />
-            <h6>{`${firstName} ${lastName}`}</h6>
+            <img src={picture} alt={memberName} />
+            <h6>{memberName}</h6>
             <p>{jobTitle}</p>
         </div>
     )
