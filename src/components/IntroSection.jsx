@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 const IntroSection = ({pageName, heading, txt}) => {
   return (
-    <section class="intro-section">
-                <div class="container-md intro-section-wrp">
-                    <div class="page-heading">
+    <section className="intro-section">
+                <div className="container-md intro-section-wrp">
+                    <div className="page-heading">
                         <nav>
                             <Link to="/">Home</Link>
                             <span>{pageName}</span>
@@ -15,7 +15,7 @@ const IntroSection = ({pageName, heading, txt}) => {
                         <span>{txt}</span>
                     </div>
                 </div>
-                <img src={squiggle2} alt="decoration" class="intro-white-squiggle" />
+                <img src={squiggle2} alt="decoration" className="intro-white-squiggle" />
             </section>
   )
 }

@@ -7,8 +7,8 @@ import gobonaLogo from '../assets/images/gobona-logo.svg'
 
 const BrandDisplay = () => {
   return (
-    <section class="brand-display">
-        <div class="container-md">
+    <section className="brand-display">
+        <div className="container-md">
             <img src={paperzLogo} alt="Paperz" />
             <img src={dorfusLogo} alt="Dorfus" />
             <img src={martinoLogo} alt="Martino" />

@@ -84,8 +84,6 @@ input::placeholder, textarea::placeholder {
 
 .btn-generic {
   display: flex;
-  color: #191919;
-  text-decoration: none;
   padding-left: 35px;
   padding-right: 36px;
   height: 56px;
@@ -93,6 +91,8 @@ input::placeholder, textarea::placeholder {
   border-radius: 28px;
   font-weight: 600;
   font-size: 14px;
+  color: #191919;
+  text-decoration: none;
   transition: all 0.3s;
 }
 @media (min-width: 768px) {
@@ -277,13 +277,13 @@ header .header-wrp .header-bottom nav {
   font-size: 16px;
   font-weight: 400;
 }
-header .header-wrp .header-bottom nav .active {
+header .header-wrp .header-bottom nav .current-nav {
   font-weight: 500;
 }
-header .header-wrp .header-bottom nav .active, header .header-wrp .header-bottom nav a:hover {
+header .header-wrp .header-bottom nav .current-nav, header .header-wrp .header-bottom nav a:hover {
   position: relative;
 }
-header .header-wrp .header-bottom nav .active::before, header .header-wrp .header-bottom nav a:hover::before {
+header .header-wrp .header-bottom nav .current-nav::before, header .header-wrp .header-bottom nav a:hover::before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -1062,16 +1062,14 @@ main .about .about-wrp .about-content .about-content-buttons a {
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-main .about .about-wrp .about-content .about-content-buttons a span {
   color: #191919;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
-main .about .about-wrp .about-content .about-content-buttons .fa-play {
+main .about .about-wrp .about-content .about-content-buttons .btn-white {
   width: 56px;
-  padding: 0;
+  padding: 0 5px 0 0;
   font-size: 12px;
   display: flex;
   justify-content: center;

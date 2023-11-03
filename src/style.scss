@@ -85,8 +85,8 @@ input, textarea{
 
 .btn-generic {
     display:flex;
-    color: $black-font-color;
-    text-decoration:none;
+    // color: $black-font-color;
+    // text-decoration:none;
     padding-left: 35px;
     padding-right: 36px;
     height: 56px;
@@ -94,9 +94,12 @@ input, textarea{
     border-radius: 28px;
     font-weight: 600;
     font-size: 14px;
+    color: $black-font-color;
+    text-decoration:none;
     @media (min-width: $medium-breakpoint) {
         font-size: inherit;
     }
+    
     i  {
         margin-left:8px;
         font-size: 0.9em;
@@ -850,16 +853,15 @@ main  {
                         display: flex;
                         align-items: center;
                         text-decoration: none;
-                        span  {
-                            color: $black-font-color;
-                            font-size: 16px;
-                            font-family: 'Inter', sans-serif;
-                            font-weight: 600;
-                        }
+                        color: $black-font-color;
+                        font-size: 16px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 600;
+                        
                     }
-                    .fa-play {
+                    .btn-white {
                         width: 56px;
-                        padding: 0;
+                        padding: 0 5px 0 0;
                         font-size: 12px;
                         display: flex;
                         justify-content: center;

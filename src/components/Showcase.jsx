@@ -3,6 +3,7 @@ import tabletMan from '../assets/images/tablet-man.svg';
 import squiggle1 from '../assets/images/squiggle-1.svg';
 import squiggle2 from '../assets/images/squiggle-2.svg';
 import { Link } from 'react-router-dom';
+import PillButton from './generic/PillButton';
 
 const Showcase = () => {
   return (
@@ -12,8 +13,10 @@ const Showcase = () => {
                         <h1>We Provide The Best Business Solutions</h1>
                         <p className="showcase-paragraph">Establish your vision and value proposition and turn them into testable prototypes.</p>
                         <div className="showcase-content-buttons">
-                            <Link to="/contact" className="btn-generic btn-yellow">Get Consulting<i className="fa-regular fa-arrow-up-right"></i></Link>
-                            <Link to="/services" className="btn-generic btn-grey">Learn More<i className="fa-regular fa-arrow-up-right"></i></Link>
+                            {/* <Link to="/contact" className="btn-generic btn-yellow">Get Consulting<i className="fa-regular fa-arrow-up-right"></i></Link> */}
+                            <PillButton url="/contact" color="yellow" caption="Get Consulting" symbol="arrow"/>
+                            {/* <Link to="/service" className="btn-generic btn-grey">Learn More<i className="fa-regular fa-arrow-up-right"></i></Link> */}
+                            <PillButton caption="Learn More" url="/service" color="grey" symbol="arrow"/>
                         </div>
                     </div>
                     <div className="showcase-picture">
