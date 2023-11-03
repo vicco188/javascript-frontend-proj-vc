@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import PillButton from './PillButton'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PillButton from './PillButton';
 
 
 const InfoCard = ({url, caption, heading}) => {
@@ -15,7 +15,7 @@ const InfoCard = ({url, caption, heading}) => {
             <PillButton url="{url}" color="black" symbol="arrowRight" />
         </div>
     </div>
-  )
+  );
 }
 
-export default InfoCard
+export default InfoCard;

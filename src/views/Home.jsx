@@ -6,6 +6,7 @@ import BrandDisplay from '../components/BrandDisplay'
 import AboutSection from '../components/AboutSection'
 import Features from '../components/Features'
 import Services from '../components/Services'
+import WhyChooseUs from '../components/WhyChooseUs'
 const Home = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Home = () => {
             <Features />
             <AboutSection />
             <Services />
+            <WhyChooseUs />
         </main>
         <Footer />
     </>

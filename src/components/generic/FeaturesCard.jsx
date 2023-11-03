@@ -13,14 +13,12 @@ const iconMap = {
 };
 
 const FeaturesCard = ({ icon, heading, caption }) => {
-  const iconName = iconMap[icon];
-
   return (
     <div className="info-card">
       <img src={plus} className="icon-sparkles-a" alt="Icon" />
       <img src={plus} className="icon-sparkles-b" alt="Icon" />
       <img src={plus} className="icon-sparkles-c" alt="Icon" />
-      <img src={iconName} alt="Icon" />
+      <img src={iconMap[icon]} alt="Icon" />
       <h6>{heading}</h6>
       <p>{caption}</p>
     </div>
