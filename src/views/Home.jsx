@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import BrandDisplay from '../components/BrandDisplay'
 import AboutSection from '../components/AboutSection'
 import Features from '../components/Features'
+import Services from '../components/Services'
 const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Home = () => {
             <BrandDisplay />
             <Features />
             <AboutSection />
+            <Services />
         </main>
         <Footer />
     </>

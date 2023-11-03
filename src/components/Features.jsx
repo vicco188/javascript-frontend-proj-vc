@@ -1,9 +1,4 @@
 import React from 'react'
-import iconPlus from '../assets/images/icon-plus.svg'
-import iconHandshake from '../assets/images/icon-handshake.svg'
-import iconBulb from '../assets/images/icon-bulb.svg'
-import iconStock from '../assets/images/icon-stock.svg'
-import iconBox from '../assets/images/icon-box.svg'
 import PillButton from './generic/PillButton'
 import FeaturesCard from './generic/FeaturesCard'
 const Features = () => {
