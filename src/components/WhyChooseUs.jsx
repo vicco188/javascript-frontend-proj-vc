@@ -1,6 +1,6 @@
 import React from 'react'
 import conference from '../assets/images/2-people-conference.png'
-import WhyChooseCard from './generic/WhyChooseCard'
+import WhyChooseCard from './reusables/WhyChooseCard'
 
 const WhyChooseUs = () => {
   return (

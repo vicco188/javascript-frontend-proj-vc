@@ -2,7 +2,7 @@ import React from 'react'
 import samanthaBrownPic from '../assets/images/samantha-brown.png'
 import squiggle5 from '../assets/images/squiggle-5.svg'
 import { Link } from 'react-router-dom'
-import PillButton from './generic/PillButton'
+import PillButton from './reusables/PillButton'
 
 const AboutSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import squiggle3 from '../assets/images/squiggle-3.svg'
-import PillButton from './generic/PillButton'
-import InfoCard from './generic/InfoCard'
+import PillButton from './reusables/PillButton'
+import InfoCard from './reusables/InfoCard'
 
 const Services = () => {
   return (

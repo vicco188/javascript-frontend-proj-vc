@@ -3,7 +3,7 @@ import tabletMan from '../assets/images/tablet-man.svg';
 import squiggle1 from '../assets/images/squiggle-1.svg';
 import squiggle2 from '../assets/images/squiggle-2.svg';
 import { Link } from 'react-router-dom';
-import PillButton from './generic/PillButton';
+import PillButton from './reusables/PillButton';
 
 const Showcase = () => {
   return (

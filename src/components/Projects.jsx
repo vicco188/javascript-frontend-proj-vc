@@ -1,6 +1,6 @@
 import React from 'react'
-import PillButton from './generic/PillButton'
-import ProjectCard from './generic/ProjectCard'
+import PillButton from './reusables/PillButton'
+import ProjectCard from './reusables/ProjectCard'
 
 const Projects = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import PillButton from './generic/PillButton'
-import FeaturesCard from './generic/FeaturesCard'
+import PillButton from './reusables/PillButton'
+import FeaturesCard from './reusables/FeaturesCard'
 const Features = () => {
   return (
         <section className="features">
