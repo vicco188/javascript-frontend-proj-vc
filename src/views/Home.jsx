@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection'
 import Features from '../components/Features'
 import Services from '../components/Services'
 import WhyChooseUs from '../components/WhyChooseUs'
+import Projects from '../components/Projects'
 const Home = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home = () => {
             <AboutSection />
             <Services />
             <WhyChooseUs />
+            <Projects />
         </main>
         <Footer />
     </>
