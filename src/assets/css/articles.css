@@ -1,0 +1,93 @@
+.article-section {
+  background-color: #FFFFFF;
+}
+
+.article-section-wrp {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 9fr 5fr;
+  column-gap: 141px;
+  row-gap: 73px;
+  grid-template-areas: "heading ." "content sidebar";
+}
+.article-section-wrp .article-heading {
+  grid-area: heading;
+}
+.article-section-wrp .article-heading h2 {
+  margin-top: 123px;
+}
+.article-section-wrp .article-heading .article-byline {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  margin: 28px 0 0 0;
+}
+.article-section-wrp .article-heading .article-byline p {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #191919;
+}
+.article-section-wrp .article-heading .article-byline i {
+  color: #f9d783;
+  align-self: center;
+  font-size: 9px;
+}
+.article-section-wrp .article-content {
+  grid-area: content;
+}
+.article-section-wrp .article-content img {
+  width: 100%;
+}
+.article-section-wrp .article-sidebar {
+  grid-area: sidebar;
+}
+.article-section-wrp img {
+  margin-bottom: 36px;
+}
+.article-section-wrp p {
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+.article-section-wrp .quote {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 22px;
+}
+.article-section-wrp .quote p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: italic;
+  color: #191919;
+  line-height: 36px;
+}
+.article-section-wrp .article-sidebar .recent-posts-box {
+  border: 1px solid #d1d1d1;
+  padding: 45px 40px;
+}
+.article-section-wrp .article-sidebar .recent-posts-box h6 {
+  margin-bottom: 25px;
+}
+.article-section-wrp .article-sidebar .recent-posts-box h6 span {
+  border-bottom: 2px solid #191919;
+}
+.article-section-wrp .article-sidebar .recent-posts-box a {
+  text-decoration: none;
+}
+.article-section-wrp .article-sidebar .recent-posts-box a h7 {
+  color: #191919;
+}
+.article-section-wrp .article-sidebar .recent-posts-box a p {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 5px 0 11px 0;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.article-section-wrp .article-sidebar .recent-posts-box a .last-headline {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

@@ -55,6 +55,12 @@ h6 {
   font-size: 22px;
 }
 
+h7 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -1263,6 +1269,19 @@ main .team .team-wrp .team-bottom i {
 main .team .team-wrp .team-bottom i.active {
   color: #191919;
 }
+main .news-main {
+  background-color: #FFFFFF;
+  padding: 130px 0 0 0;
+}
+main .news-main h2 {
+  margin-bottom: 37px;
+}
+main .news-main .news-mid {
+  background-color: #FFFFFF;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
+}
 main .news {
   background-color: white;
   padding-top: 50px;
@@ -1308,53 +1327,6 @@ main .news .news-wrp .news-mid {
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
   justify-content: center;
-}
-main .news .news-wrp .news-mid .news-card {
-  color: inherit;
-  text-decoration: none;
-  min-height: 436px;
-  position: relative;
-}
-main .news .news-wrp .news-mid .news-card:hover .article-intro, main .news .news-wrp .news-mid .news-card:hover .article-heading {
-  color: #AAAAAA;
-}
-main .news .news-wrp .news-mid .news-card:hover .datebox {
-  background-color: #0E1021;
-}
-main .news .news-wrp .news-mid .news-card:hover .datebox p, main .news .news-wrp .news-mid .news-card:hover .datebox h6 {
-  color: #FFFFFF;
-}
-main .news .news-wrp .news-mid .news-card .article-heading {
-  margin-bottom: 18px;
-}
-main .news .news-wrp .news-mid .news-card .article-intro {
-  line-height: 28px;
-}
-main .news .news-wrp .news-mid .news-card .article-intro, main .news .news-wrp .news-mid .news-card .article-heading {
-  transition: color 0.2s;
-}
-main .news .news-wrp .news-mid .news-card img {
-  margin-bottom: 24px;
-}
-main .news .news-wrp .news-mid .news-card .datebox {
-  width: 56px;
-  height: 64px;
-  background-color: #F9D783;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease-in-out;
-}
-main .news .news-wrp .news-mid .news-card .datebox h6 {
-  margin-bottom: -5px;
-  margin-top: 21px;
-}
-main .news .news-wrp .news-mid .news-card .datebox h6, main .news .news-wrp .news-mid .news-card .datebox p {
-  transition: color 0.2s ease-in-out;
 }
 main .news .news-wrp .news-bottom {
   display: flex;

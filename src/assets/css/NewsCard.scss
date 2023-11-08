@@ -1,0 +1,58 @@
+@import './_constants';
+.news-card {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        .article-intro, .article-heading {color: $hover-color;}
+        // .article-intro, .article-heading {color: yellow;}
+        .datebox{
+            background-color: $black-bg;
+            p, h6 {color: $white-font-color;}
+            // background-color: black;
+            // p, h6 {color: white;}
+        }
+    }
+    min-height: 436px;
+    position: relative;
+    .article-heading {
+        margin-bottom: 18px;
+    }
+    .article-intro {
+        line-height: 28px;
+    }
+    .article-intro, .article-heading {
+        transition: color 0.2s;
+    }
+    .image-container {
+        overflow:hidden;
+        width: min(420px, 100%);
+        height: 230px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+        margin-bottom: 28px;
+        
+    }
+    // img {
+
+    .datebox {
+        width: 56px;
+        height: 64px;
+        background-color: #F9D783;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h6 {
+            margin-bottom: -5px;
+            margin-top: 21px;
+        }
+        transition: background-color 0.3s ease-in-out;
+        h6, p {transition: color 0.2s ease-in-out;}
+    }
+}

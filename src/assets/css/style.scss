@@ -1,19 +1,5 @@
-$small-breakpoint: 576px;
-$medium-breakpoint: 768px;
-$large-breakpoint: 992px;
-$xlarge-breakpoint: 1200px;
-$xxlarge-breakpoint: 1400px;
-$hover-color: #AAAAAA;
-$grey-bg: #F0EFE9;
-$white-bg: #FFFFFF;
-$black-bg: #0E1021;
-$yellow-bg: #EDCF86;
-$black-font-color: #191919;
-$dark-grey-font-color: #5E5E5E;
-$grey-font-color: #B6B6BC;
-$white-font-color: #FFFFFF;
-$grey-border: 2px solid #DAD9D3;
 
+@import './_constants';
 *  {
     box-sizing:border-box; 
     // border:solid 1px;  //debug only
@@ -58,6 +44,11 @@ h6 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 22px;
+}
+h7 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
 }
 p {
     font-family: 'Inter', sans-serif;
@@ -1027,8 +1018,24 @@ main  {
             }
         }
     }
-    
+    .news-main {
+        background-color: $white-bg;
+        padding: 130px 0 0 0;
+
+        h2 {
+            margin-bottom: 37px;
+        }
+        .news-mid {
+            background-color: $white-bg;
+            display: grid;
+                gap: 30px;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
+                
+        }
+    }
     .news {
+        
+        
         background-color: white;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1060,49 +1067,7 @@ main  {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
                 // align-items: center;
                 justify-content: center;
-                .news-card {
-                    color: inherit;
-                    text-decoration: none;
-                    &:hover {
-                        .article-intro, .article-heading {color: $hover-color;}
-                        .datebox{
-                            background-color: $black-bg;
-                            p, h6 {color: $white-font-color;}
-                        }
-                    }
-                    min-height: 436px;
-                    position: relative;
-                    .article-heading {
-                        margin-bottom: 18px;
-                    }
-                    .article-intro {
-                        line-height: 28px;
-                    }
-                    .article-intro, .article-heading {
-                        transition: color 0.2s;
-                    }
-                    img {
-                        margin-bottom: 24px;
-                    }
-                    .datebox {
-                        width: 56px;
-                        height: 64px;
-                        background-color: #F9D783;
-                        position: absolute;
-                        top: 16px;
-                        left: 16px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        h6 {
-                            margin-bottom: -5px;
-                            margin-top: 21px;
-                        }
-                        transition: background-color 0.3s ease-in-out;
-                        h6, p {transition: color 0.2s ease-in-out;}
-                    }
-                }
+                
             }
             .news-bottom {
                 display: flex;
