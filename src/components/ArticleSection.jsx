@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ArticleQuote from './reusables/ArticleQuote';
 import ArticleSidebar from './ArticleSidebar';
 import { dateToDay, dateToMonth, dateToYear } from '../assets/script/dateFunctions';
+import PillButton from './reusables/PillButton';
 
 const ArticleSection = ({id}) => {
 const [article, setArticle] = useState({});
@@ -39,8 +40,12 @@ return (
                 <p>{fillOutText2}</p>
                 <ArticleQuote text={fillOutText3}/>
                 <p>{fillOutText4}</p>
+                <div className="article-category-buttons">
+                    <div className="article-category-button">{article.category}</div>
+                </div>
             </div>
             <ArticleSidebar />
+            
 
         </div>
     </section>

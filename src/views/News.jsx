@@ -10,9 +10,11 @@ const News = () => {
         <Header />
         <main>
             <IntroSection heading="News & Articles" pageName="News" txt=""/>
-            <section className="news-main container-md">
-              <h2>Our News & Articles</h2>
-              <NewsGrid amount={9} />
+            <section className="news-main">
+                <div className="news-main-wrp container-md">
+                  <h2>Our News & Articles</h2>
+                  <NewsGrid amount={9} />
+                </div>
             </section>
         </main>
         <Footer />

@@ -8,10 +8,13 @@ import NewsGrid from './reusables/NewsGrid';
 
 
 
-const NewsSection = () => {
-    
+const NewsSection = ({bgColor}) => {
+    let classes='news';
+    if (bgColor === "white") {
+        classes='news white-bg';
+    }
     return (
-        <section className="news">
+        <section className={classes}>
                 <div className="container-md news-wrp">
                     <div className="news-top">
                         <div className="section-title">

@@ -1021,27 +1021,39 @@ main  {
     .news-main {
         background-color: $white-bg;
         padding: 130px 0 0 0;
-
-        h2 {
-            margin-bottom: 37px;
-        }
-        .news-mid {
-            background-color: $white-bg;
-            display: grid;
-                gap: 30px;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
-                
+        .news-main-wrp {
+            padding: 0;
+            h2 {
+                margin-bottom: 37px;
+            }
+            .news-mid {
+                background-color: $white-bg;
+                display: grid;
+                    gap: 30px;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
+                    
+            }
         }
     }
+
+
     .news {
         
-        
-        background-color: white;
+        &.white-bg {
+            background-color: white;
+        }
+       
         padding-top: 50px;
         padding-bottom: 50px;
         @media(min-width: $large-breakpoint) {
-            padding-top: 116px;
-            padding-bottom: 80px;
+            padding-top: 36px;
+            padding-bottom: 65px;
+        }
+        &.white-bg {
+            @media(min-width: $large-breakpoint) {
+                padding-top: 116px;
+                padding-bottom: 80px;
+            }
         }
         .news-wrp {
             @media(min-width: $medium-breakpoint) {padding: 0;}

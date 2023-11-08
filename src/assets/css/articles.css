@@ -40,28 +40,43 @@
 .article-section-wrp .article-content img {
   width: 100%;
 }
-.article-section-wrp .article-sidebar {
-  grid-area: sidebar;
-}
-.article-section-wrp img {
+.article-section-wrp .article-content img {
   margin-bottom: 36px;
 }
-.article-section-wrp p {
+.article-section-wrp .article-content p {
   margin-bottom: 30px;
   line-height: 28px;
 }
-.article-section-wrp .quote {
+.article-section-wrp .article-content .quote {
   display: grid;
   grid-template-columns: 30px 1fr;
   gap: 22px;
 }
-.article-section-wrp .quote p {
+.article-section-wrp .article-content .quote p {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 22px;
   font-style: italic;
   color: #191919;
   line-height: 36px;
+}
+.article-section-wrp .article-content .article-category-buttons {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.article-section-wrp .article-content .article-category-buttons .article-category-button {
+  height: 40px;
+  border-radius: 20px;
+  background-color: #F0EFE9;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+}
+.article-section-wrp .article-sidebar {
+  grid-area: sidebar;
 }
 .article-section-wrp .article-sidebar .recent-posts-box {
   border: 1px solid #d1d1d1;

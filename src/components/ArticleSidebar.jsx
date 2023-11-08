@@ -4,21 +4,22 @@ import { dateToDay, dateToMonth, dateToYear } from '../assets/script/dateFunctio
 
 const ArticleSidebar = () => {
     const [headlines, setHeadlines] = useState([]);
-    
+    const numberOfHeadlines = 4;
+    useEffect(() => {
+        getHeadlines(numberOfHeadlines);
+    },[])
     const getHeadlines = async (amount) => {
         const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles?take=${amount}`);
         if(result.status === 200){
             setHeadlines(await result.json())
         }
     };
-    const numberOfHeadlines = 4;
-    useEffect(() => {
-        getHeadlines(numberOfHeadlines);
-    },[])
+    
+    
   
     return (
     <div className="article-sidebar">
-        <div className="article-searchbox">SÖK</div>
+        <div className="article-searchbox"style={{"color": "red", "font-weight": "900"}}>SÖK</div>
         <div className="recent-posts-box">
             <h6><span>Rec</span>ent Posts</h6>
             {headlines.map((headline, index) => (
@@ -29,7 +30,7 @@ const ArticleSidebar = () => {
             
             ))}
         </div>
-        <div className="article-categories-box">KATEGORIER</div>
+        <div className="article-categories-box" style={{"color": "red", "font-weight": "900"}}>KATEGORIER</div>
 
 
     </div>

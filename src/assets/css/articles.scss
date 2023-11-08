@@ -44,33 +44,44 @@
         img {
             width: 100%;
         }
-    }
-    .article-sidebar {
-        grid-area: sidebar;;
-    }
-    img {
-        margin-bottom: 36px;
-    }
-    p {
-        margin-bottom: 30px;
-        line-height: 28px;
-    }
-    .quote {
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        gap: 22px;
+    
+
+        img {
+            margin-bottom: 36px;
+        }
         p {
-            font-family: "DM Sans", sans-serif;
-            font-weight: 500;
-            font-size: 22px;
-            font-style: italic;
-            color: $black-font-color;
-            line-height: 36px;
+            margin-bottom: 30px;
+            line-height: 28px;
+        }
+        .quote {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            gap: 22px;
+            p {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                font-style: italic;
+                color: $black-font-color;
+                line-height: 36px;
+            }
+        }
+        .article-category-buttons {
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 65px;
+            .article-category-button {
+                height: 40px;
+                border-radius: 20px;
+                background-color: $grey-bg;
+                align-items: center;
+                justify-content: center;
+                padding-left: 15px; padding-right: 15px; padding-top: 7px;
+            }
         }
     }
-
     .article-sidebar {
-        
+        grid-area : sidebar;
         .recent-posts-box {
             border: 1px solid #d1d1d1;
             padding: 45px 40px;
@@ -102,6 +113,7 @@
             }
         }
     }
+    
 
 }
 

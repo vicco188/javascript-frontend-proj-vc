@@ -25,7 +25,7 @@ const Home = () => {
             <Projects />
             <Team />
             <Testimonials />
-            <NewsSection />
+            <NewsSection bgColor="white"/>
         </main>
         <Footer />
     </>

@@ -1273,22 +1273,33 @@ main .news-main {
   background-color: #FFFFFF;
   padding: 130px 0 0 0;
 }
-main .news-main h2 {
+main .news-main .news-main-wrp {
+  padding: 0;
+}
+main .news-main .news-main-wrp h2 {
   margin-bottom: 37px;
 }
-main .news-main .news-mid {
+main .news-main .news-main-wrp .news-mid {
   background-color: #FFFFFF;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
 }
 main .news {
-  background-color: white;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+main .news.white-bg {
+  background-color: white;
+}
 @media (min-width: 992px) {
   main .news {
+    padding-top: 36px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 992px) {
+  main .news.white-bg {
     padding-top: 116px;
     padding-bottom: 80px;
   }
