@@ -9,7 +9,7 @@ const PillButton = ({caption, url, color, symbol}) => {
             faTag=<i className="fa-regular fa-arrow-up-right"></i>;
             break;
         case 'play':
-            faTag= <i className="fa-solid fa-play"></i>
+            faTag = <i className="fa-solid fa-play"></i>
             break;
         case 'arrowRight':
             faTag=<i className="fa-regular fa-arrow-right"></i>;

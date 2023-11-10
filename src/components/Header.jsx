@@ -1,6 +1,7 @@
 import React from 'react'
 import logotype from '../assets/images/logo.svg'
 import { Link, NavLink } from 'react-router-dom'
+import PillButton from './reusables/PillButton'
 
 const Header = () => {
   return (
@@ -28,7 +29,7 @@ const Header = () => {
                         <NavLink to="/news">News</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                     </nav>
-                    <div className="header-bottom-loginbutton"><Link to="/login" className="btn-generic btn-yellow">Login<i className="fa-regular fa-arrow-up-right"></i></Link></div>
+                    <div className="header-bottom-loginbutton"><PillButton color="yellow" symbol="arrow" caption="Login" url="/login" /></div>
                 </div>
             </div>
     </header>

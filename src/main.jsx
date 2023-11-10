@@ -9,12 +9,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Contact from './views/Contact'
 import News from './views/News'
 import Articles from './views/Articles'
+import ScrollToTop from './components/reusables/ScrollToTop'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="wrapper">
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
