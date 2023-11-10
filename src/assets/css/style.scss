@@ -13,6 +13,7 @@ html, body  {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    // overflow: hidden;
 }
 
 h1 {
@@ -173,12 +174,20 @@ header {
         }
         .header-burgerbutton {
             grid-area: header-burgerbutton;
-            //background-color: rgb(184, 128, 55); // debug only
+            background-color: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 5px;
+            border: none;
             @media(min-width: $medium-breakpoint) {display: none;}
+            z-index: 1;
+            .fa-xmark {
+                color: $white-font-color;
+            }
+            .fa-bars {
+                color: $black-font-color;
+            }
         }
         .header-logo {
             display: flex;
@@ -272,6 +281,62 @@ header {
                     }                    
                 }
             }
+        }
+    }
+    position: relative;
+    // overflow: hidden;
+    .mobile-menu {
+        @media(min-width: $large-breakpoint) {display: none;} //DEBUG ONLY
+        position: fixed;
+        top: 5px; left: 5px; right: 5px; bottom: 5px;
+        z-index: 1;
+        background-color: $black-bg;
+        padding: 70px 50px;
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        a {
+            color: $white-font-color;
+            text-decoration: none;
+            &.active {
+                background-color: #24262e;
+                margin-left: -25px;
+                margin-right: -25px;
+                padding-left: 25px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                margin-top: -7px;
+                margin-bottom: -7px;
+                border-radius: 30px;
+            }
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $yellow-bg;
+            margin-bottom: 30px;
+            .mobile-menu-login-button {
+                margin-top: 20px;
+                display: flex;
+                a {color: $black-font-color;}
+            }
+        }
+        .mobile-menu-contactinfo {
+            font-size: 14px;
+            .mobile-menu-contactinfo-contact {
+                margin: 10px 0;
+                i {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .mobile-menu-somedicons {
+            display: flex;
+            justify-content: space-around;
         }
     }
 }

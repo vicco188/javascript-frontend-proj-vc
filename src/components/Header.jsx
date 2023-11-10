@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logotype from '../assets/images/logo.svg'
 import { Link, NavLink } from 'react-router-dom'
 import PillButton from './reusables/PillButton'
+import MobileMenu from './mobileMenu'
 
 const Header = () => {
-  return (
-    <header>
+    const [menuShown, setMenuShown] = useState(false);
+
+
+    return (
+        <header>
+            {
+                menuShown? (<MobileMenu />) : (null)
+
+            }
+
             <div className="container-md header-wrp">
-                <div className="header-burgerbutton"><i className="fa-solid fa-bars fa-xl"></i></div>
+                <button className="header-burgerbutton" onClick={() => setMenuShown(currentState => !currentState)}>
+                    { menuShown ? 
+                        <i className="fa-solid fa-xmark fa-xl"></i> : 
+                        <i className="fa-solid fa-bars fa-xl"></i> 
+                    }
+                    
+                    
+                </button>
                 <div className="header-logo"><Link to="/"><img src={logotype} alt="Crito logotype" /></Link></div>
                 <div className="header-top">
                     <div className="header-top-contactinfo">
@@ -32,8 +48,8 @@ const Header = () => {
                     <div className="header-bottom-loginbutton"><PillButton color="yellow" symbol="arrow" caption="Login" url="/login" /></div>
                 </div>
             </div>
-    </header>
-  )
+        </header>
+    )
 }
 
 export default Header

@@ -29,9 +29,7 @@ return (
                     <i className="fa-solid fa-circle"></i>
                     <p>{article.category}</p>
                     <i className="fa-solid fa-circle"></i>
-                    <p>{article.author}</p>
-                    <i className="fa-solid fa-circle"></i>
-                    <p>{new Date(article.published).toLocaleDateString('en-GB', {month: 'short'})} {new Date(article.published).toLocaleDateString('en-GB', {day: 'numeric'})}, {new Date(article.published).toLocaleDateString('en-GB', { year: 'numeric'})}</p>
+                    <p>{article.author}</p>§
                 </p>
             </div>
             <div className="article-content">
