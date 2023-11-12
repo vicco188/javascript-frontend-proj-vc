@@ -10,19 +10,12 @@ const Header = () => {
 
     return (
         <header>
-            {
-                menuShown? (<MobileMenu />) : (null)
-
-            }
-
             <div className="container-md header-wrp">
                 <button className="header-burgerbutton" onClick={() => setMenuShown(currentState => !currentState)}>
                     { menuShown ? 
                         <i className="fa-solid fa-xmark fa-xl"></i> : 
                         <i className="fa-solid fa-bars fa-xl"></i> 
                     }
-                    
-                    
                 </button>
                 <div className="header-logo"><Link to="/"><img src={logotype} alt="Crito logotype" /></Link></div>
                 <div className="header-top">
@@ -48,6 +41,10 @@ const Header = () => {
                     <div className="header-bottom-loginbutton"><PillButton color="yellow" symbol="arrow" caption="Login" url="/login" /></div>
                 </div>
             </div>
+            {
+                menuShown? (<MobileMenu />) : (null)
+
+            }
         </header>
     )
 }

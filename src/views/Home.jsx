@@ -11,6 +11,7 @@ import Projects from '../components/Projects'
 import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
 import NewsSection from '../components/NewsSection'
+import Newsletter from '../components/Newsletter'
 const Home = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const Home = () => {
             <Team />
             <Testimonials />
             <NewsSection bgColor="white"/>
+            <Newsletter />
         </main>
         <Footer />
     </>

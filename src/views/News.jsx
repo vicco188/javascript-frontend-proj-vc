@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import IntroSection from '../components/IntroSection'
 import NewsGrid from '../components/reusables/NewsGrid'
+import Newsletter from '../components/Newsletter'
 
 const News = () => {
   return (
@@ -14,8 +15,10 @@ const News = () => {
                 <div className="news-main-wrp container-md">
                   <h2>Our News & Articles</h2>
                   <NewsGrid amount={9} />
+                  <div style={{"color": "red", "font-size": "55px", "display": "flex", "justify-content": "center"}}>123456</div>
                 </div>
             </section>
+            <Newsletter />
         </main>
         <Footer />
     </>

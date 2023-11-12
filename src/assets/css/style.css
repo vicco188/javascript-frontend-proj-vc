@@ -167,7 +167,6 @@ input::placeholder, textarea::placeholder {
 header {
   background-color: #F0EFE9;
   padding-bottom: 10px;
-  position: relative;
 }
 header .header-wrp {
   height: 100px;
@@ -207,7 +206,7 @@ header .header-wrp .header-burgerbutton {
   }
 }
 header .header-wrp .header-burgerbutton .fa-xmark {
-  color: #FFFFFF;
+  color: #191919;
 }
 header .header-wrp .header-burgerbutton .fa-bars {
   color: #191919;
@@ -319,13 +318,11 @@ header .header-wrp .header-bottom nav a:hover::before {
   border-bottom: 2px solid #AAAAAA;
 }
 header .mobile-menu {
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  margin-top: -15px;
+  border-top: 2px solid #DAD9D3;
+  border-bottom: 2px solid #DAD9D3;
   z-index: 1;
-  background-color: #0E1021;
+  background-color: #F0EFE9;
   padding: 70px 50px;
   font-size: 1.3em;
   display: flex;
@@ -339,11 +336,11 @@ header .mobile-menu {
   }
 }
 header .mobile-menu a {
-  color: #FFFFFF;
+  color: #191919;
   text-decoration: none;
 }
 header .mobile-menu a.active {
-  background-color: #24262e;
+  background-color: #DAD9D3;
   margin-left: -25px;
   margin-right: -25px;
   padding-left: 25px;
@@ -358,7 +355,7 @@ header .mobile-menu nav {
   flex-direction: column;
   gap: 20px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #EDCF86;
+  border-bottom: 2px solid #DAD9D3;
   margin-bottom: 30px;
 }
 header .mobile-menu nav .mobile-menu-login-button {
@@ -378,6 +375,7 @@ header .mobile-menu .mobile-menu-contactinfo .mobile-menu-contactinfo-contact i 
   margin-right: 15px;
 }
 header .mobile-menu .mobile-menu-somedicons {
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
 }
