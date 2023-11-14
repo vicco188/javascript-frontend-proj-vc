@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import './NewsCard.css'
 import '../../assets/css/NewsCard.css'
 
 const NewsCard = ({image, category, heading, intro, day, month, url}) => {

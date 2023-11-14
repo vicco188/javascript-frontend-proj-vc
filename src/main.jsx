@@ -10,21 +10,24 @@ import Contact from './views/Contact'
 import News from './views/News'
 import Articles from './views/Articles'
 import ScrollToTop from './components/reusables/ScrollToTop'
+import { NewsProvider } from './contexts/NewsContext'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="wrapper">
       <BrowserRouter>
-      <ScrollToTop />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/news' element={<News />} />
-          <Route path='/articles/:id' element={<Articles />} />
-          <Route path='*' element={<NotFound />} />
+        <NewsProvider>
+          <ScrollToTop />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/news' element={<News />} />
+              <Route path='/articles/:id' element={<Articles />} />
+              <Route path='*' element={<NotFound />} />
 
-        </Routes>
+            </Routes>
+          </NewsProvider>
       </BrowserRouter>
     </div>
   </React.StrictMode>,

@@ -1,12 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import PillButton from './reusables/PillButton'
-
 import NewsGrid from './reusables/NewsGrid';
-
-
-
-
-
 
 const NewsSection = ({bgColor}) => {
     let classes='news';
@@ -21,11 +15,9 @@ const NewsSection = ({bgColor}) => {
                             <h4>Articles & News</h4>
                             <h2>Get Every Single Article & News</h2>
                         </div>
-                        <div className="news-button">
-                            
+                        <div className="news-button">    
                             <PillButton url="/News" color="white" caption="Browse Articles"symbol ="arrow"/>
-                        </div>
-                        
+                        </div>  
                     </div>
                     <NewsGrid amount={3} />
                     <div className="news-bottom">

@@ -14,7 +14,7 @@ const News = () => {
             <section className="news-main">
                 <div className="news-main-wrp container-md">
                   <h2>Our News & Articles</h2>
-                  <NewsGrid amount={9} />
+                  <NewsGrid amount={7} />
                   <div style={{"color": "red", "font-size": "55px", "display": "flex", "justify-content": "center"}}>123456</div>
                 </div>
             </section>
