@@ -9,13 +9,13 @@ const ArticleSidebar = () => {
   
     return (
     <div className="article-sidebar">
-        <div className="article-searchbox"style={{"color": "red", "font-weight": "900"}}>SÖK</div>
+        <div className="article-searchbox"style={{"color": "red", "fontWeight": "900"}}>SÖK</div>
         <div className="recent-posts-box">
             <h6><span>Rec</span>ent Posts</h6>
             {allNews.map((headline, index) => (
                 (index + 1 <= numberOfHeadlines ?
                     <Link key={headline.id} to={`/articles/${headline.id}`}>
-                        <h7>{headline.title}</h7>
+                        <span className="headline-title">{headline.title}</span>
                         {index + 1 < numberOfHeadlines ? 
                             <p>{`${dateToMonth(headline.published)} ${dateToDay(headline.published)}, ${dateToYear(headline.published)}`}</p> 
                         : 
@@ -27,7 +27,7 @@ const ArticleSidebar = () => {
             
             ))}
         </div>
-        <div className="article-categories-box" style={{"color": "red", "font-weight": "900"}}>KATEGORIER</div>
+        <div className="article-categories-box" style={{"color": "red", "fontWeight": "900"}}>KATEGORIER</div>
 
 
     </div>

@@ -1597,34 +1597,60 @@ main .contact-form .contact-form-wrp {
 main .contact-form .contact-form-wrp h2 {
   margin-bottom: 28px;
 }
+main .contact-form .contact-form-wrp h3 {
+  margin-bottom: 40px;
+}
 main .contact-form .contact-form-wrp form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-main .contact-form .contact-form-wrp form input[type=text], main .contact-form .contact-form-wrp form input[type=email], main .contact-form .contact-form-wrp form textarea {
+main .contact-form .contact-form-wrp form .input-field {
+  position: relative;
+}
+main .contact-form .contact-form-wrp form .input-field input[type=text], main .contact-form .contact-form-wrp form .input-field input[type=email], main .contact-form .contact-form-wrp form .input-field textarea {
   width: calc(100vw - 60px);
   padding-left: 38px;
   padding-right: 28px;
 }
 @media (min-width: 768px) {
-  main .contact-form .contact-form-wrp form input[type=text], main .contact-form .contact-form-wrp form input[type=email], main .contact-form .contact-form-wrp form textarea {
+  main .contact-form .contact-form-wrp form .input-field input[type=text], main .contact-form .contact-form-wrp form .input-field input[type=email], main .contact-form .contact-form-wrp form .input-field textarea {
     width: min(1021px, 70vw);
   }
 }
-main .contact-form .contact-form-wrp form textarea {
+main .contact-form .contact-form-wrp form .input-field textarea {
   padding-top: 20px;
   height: 210px;
   resize: none;
 }
 @media (min-width: 576px) {
-  main .contact-form .contact-form-wrp form textarea {
+  main .contact-form .contact-form-wrp form .input-field textarea {
     height: 160px;
+  }
+}
+main .contact-form .contact-form-wrp form .input-field .error {
+  color: #fa0033;
+}
+@media (min-width: 576px) {
+  main .contact-form .contact-form-wrp form .input-field .error {
+    position: absolute;
+    top: 16px;
+    right: 50px;
   }
 }
 main .contact-form .contact-form-wrp form .btn-generic {
   justify-content: center;
   margin-top: 30px;
+}
+main .contact-form .contact-form-wrp .send-confirmation {
+  height: 542px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contact-form .contact-form-wrp .send-confirmation button {
+  padding: 0 70px;
 }
 main .visit-map {
   background-color: #0E1021;

@@ -1307,26 +1307,57 @@ main  {
             h2 {
                 margin-bottom: 28px;
             }
+            h3 {
+                margin-bottom: 40px;
+            }
+            
             form {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
-                input[type="text"], input[type="email"], textarea  {
-                    width: calc(100vw - 60px);
-                    @media(min-width: $medium-breakpoint) {width: min(1021px, 70vw);}
-                    padding-left: 38px;
-                    padding-right: 28px;
-                }
-                textarea {
-                    padding-top: 20px;                    
-                    height: 210px;
-                    @media(min-width: $small-breakpoint) {height: 160px;}
-                    resize: none;
+                .input-field {
+                    position: relative;
+                    
+                    input[type="text"], input[type="email"], textarea  {
+                        width: calc(100vw - 60px);
+                        @media(min-width: $medium-breakpoint) {width: min(1021px, 70vw);}
+                        padding-left: 38px;
+                        padding-right: 28px;
+                    }
+                    textarea {
+                        padding-top: 20px;                    
+                        height: 210px;
+                        @media(min-width: $small-breakpoint) {height: 160px;}
+                        resize: none;   
+                    }
+                    .error {g
+                        @media (min-width: $small-breakpoint) {
+                            position: absolute;
+                            top: 16px;
+                            right: 50px;
+                        }
+                        color: #fa0033;
+
+                    }
                 }
                 .btn-generic {
                     justify-content: center;
                     margin-top: 30px;
                 }
+                
+                
+            }
+            .send-confirmation {
+                height: 542px;
+
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                button {
+                    padding:0 70px;
+                }
+
             }
         }
     }

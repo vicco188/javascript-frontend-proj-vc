@@ -7,13 +7,19 @@
 
 .article-section-wrp {
     padding: 0;
-    display: grid;
-    grid-template-columns: 9fr 5fr;
-    column-gap: 141px;
-    row-gap: 73px;
-    grid-template-areas: 
-        "heading ."
-        "content sidebar";
+    
+    @media(min-width: $large-breakpoint){
+        grid-template-columns: 9fr 5fr;
+        display: grid;
+        column-gap: 141px;
+        row-gap: 73px;
+        grid-template-areas: 
+            "heading ."
+            "content sidebar";
+    
+    
+    }
+    
     .article-heading {
         grid-area: heading;
         h2 {
@@ -81,6 +87,8 @@
         }
     }
     .article-sidebar {
+        display: none;
+        @media(min-width: $large-breakpoint){display: block;}
         grid-area : sidebar;
         .recent-posts-box {
             border: 1px solid #d1d1d1;
@@ -94,7 +102,7 @@
             
             a {
                 text-decoration: none;
-                h7 {
+                .headline-title {
                     color: $black-font-color;
                 }
                 p {
