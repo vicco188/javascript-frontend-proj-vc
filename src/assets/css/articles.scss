@@ -122,9 +122,17 @@
             
             a {
                 text-decoration: none;
+                
                 .headline-title {
                     color: $black-font-color;
+                    transition: color 0.25S;
                 }
+                &:hover {
+                    .headline-title {
+                        color: $grey-font-color;
+                    }
+                }
+                
                 p {
                     border-bottom: 1px solid #e7e7e7;
                     padding: 5px 0 11px 0;
@@ -150,6 +158,9 @@
                 font-family: "DM Sans", sans-serif;
                 line-height: 32px;
                 font-weight: 700;
+                &:hover {
+                    color: $grey-font-color;
+                }
                 span {
                     color: #757575;
                 }
