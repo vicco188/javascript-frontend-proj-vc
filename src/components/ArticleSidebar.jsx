@@ -9,7 +9,12 @@ const ArticleSidebar = () => {
   
     return (
     <div className="article-sidebar">
-        <div className="article-searchbox"style={{"color": "red", "fontWeight": "900"}}>SÖK</div>
+        <div className="article-searchbox">
+            <form>
+                <input type="text" placeholder="Type to search..."/>
+                <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
         <div className="recent-posts-box">
             <h6><span>Rec</span>ent Posts</h6>
             {allNews.map((headline, index) => (
@@ -27,7 +32,15 @@ const ArticleSidebar = () => {
             
             ))}
         </div>
-        <div className="article-categories-box" style={{"color": "red", "fontWeight": "900"}}>KATEGORIER</div>
+        <div className="article-categories-box" >
+            <h6><span>Cat</span>egories</h6>
+            <Link className="category-post">Technology - <span>20 posts</span></Link>
+            <Link className="category-post">Freelancing - <span>07 posts</span></Link>
+            <Link className="category-post">Writing - <span>16 posts</span></Link>
+            <Link className="category-post">Marketing - <span>11 posts</span></Link>
+            <Link className="category-post">Business - <span>35 posts</span></Link>
+            <Link className="category-post">Education - <span>14 posts</span></Link>
+        </div>
 
 
     </div>

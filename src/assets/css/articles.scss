@@ -16,8 +16,6 @@
         grid-template-areas: 
             "heading ."
             "content sidebar";
-    
-    
     }
     
     .article-heading {
@@ -88,17 +86,39 @@
     }
     .article-sidebar {
         display: none;
-        @media(min-width: $large-breakpoint){display: block;}
+        @media(min-width: $large-breakpoint){
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
         grid-area : sidebar;
+        h6 {
+            margin-bottom: 25px;
+            span {
+                border-bottom: 2px solid $black-font-color;
+            }
+        }
+        .article-searchbox {
+            position: relative;
+            input {
+                background-color: #f3f3f3;
+                height: 56px;
+                width: 100%;
+                padding: 0 62px;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                color: $black-font-color;
+                position: absolute;
+                left: 30px;
+                top: 16px;
+            }
+        }
         .recent-posts-box {
             border: 1px solid #d1d1d1;
             padding: 45px 40px;
-            h6 {
-                margin-bottom: 25px;
-                span {
-                    border-bottom: 2px solid $black-font-color;
-                }
-            }
+            
             
             a {
                 text-decoration: none;
@@ -117,6 +137,21 @@
                     border-bottom: none;
                     margin-bottom: 0;
                     padding-bottom: 0;
+                }
+            }
+        }
+        .article-categories-box {
+            border: 1px solid #d1d1d1;
+            padding: 45px 40px;
+            a{
+                display:block;
+                text-decoration: none;
+                color: $black-font-color;
+                font-family: "DM Sans", sans-serif;
+                line-height: 32px;
+                font-weight: 700;
+                span {
+                    color: #757575;
                 }
             }
         }
