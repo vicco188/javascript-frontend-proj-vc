@@ -84,6 +84,9 @@ input, textarea {
 input:focus, textarea:focus {
   box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.0901960784);
 }
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #8C8C8C;
+}
 input::placeholder, textarea::placeholder {
   color: #8C8C8C;
 }
@@ -704,7 +707,8 @@ main .features .features-wrp .features-right .features-right-grid {
   display: grid;
   row-gap: 66px;
   grid-template-columns: 1fr;
-  column-gap: 72px;
+  -moz-column-gap: 72px;
+       column-gap: 72px;
 }
 @media (min-width: 576px) {
   main .features .features-wrp .features-right .features-right-grid {
@@ -713,22 +717,26 @@ main .features .features-wrp .features-right .features-right-grid {
 }
 @media (min-width: 768px) {
   main .features .features-wrp .features-right .features-right-grid {
-    column-gap: 144px;
+    -moz-column-gap: 144px;
+         column-gap: 144px;
   }
 }
 @media (min-width: 992px) {
   main .features .features-wrp .features-right .features-right-grid {
-    column-gap: 36px;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
   }
 }
 @media (min-width: 1200px) {
   main .features .features-wrp .features-right .features-right-grid {
-    column-gap: 72px;
+    -moz-column-gap: 72px;
+         column-gap: 72px;
   }
 }
 @media (min-width: 1400px) {
   main .features .features-wrp .features-right .features-right-grid {
-    column-gap: 144px;
+    -moz-column-gap: 144px;
+         column-gap: 144px;
   }
 }
 main .features .features-wrp .features-right .features-right-grid .info-card {
@@ -1009,7 +1017,8 @@ main .about .about-wrp {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "section-title" "about-image" "about-content";
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 @media (min-width: 992px) {
   main .about .about-wrp {
@@ -1019,7 +1028,8 @@ main .about .about-wrp {
 }
 @media (min-width: 1400px) {
   main .about .about-wrp {
-    column-gap: 200px;
+    -moz-column-gap: 200px;
+         column-gap: 200px;
   }
 }
 main .about .about-wrp .about-image {
@@ -1185,7 +1195,8 @@ main .testimonials .testimonials-wrp .section-title {
 }
 main .testimonials .testimonials-wrp .testimonials-grid {
   display: grid;
-  column-gap: 51px;
+  -moz-column-gap: 51px;
+       column-gap: 51px;
   row-gap: 70px;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
@@ -1208,7 +1219,8 @@ main .testimonials .testimonials-wrp .testimonials-grid .testimonial-card p {
 main .testimonials .testimonials-wrp .testimonials-grid .testimonial-card .testifier-byline {
   display: grid;
   grid-template-columns: 70px 1fr;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   grid-template-areas: "tpicture   tname" "tpicture   ttitle";
 }
 main .testimonials .testimonials-wrp .testimonials-grid .testimonial-card .testifier-byline .testifier-picture {

@@ -37,6 +37,7 @@ h2 {
 h4  {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
+
     @media(min-width: $xlarge-breakpoint) {font-size: 18px;}
     color: #F94D1C;
     font-weight: 500;
