@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import IntroSection from '../components/IntroSection'
 import NewsGrid from '../components/reusables/NewsGrid'
 import Newsletter from '../components/Newsletter'
+import PageNoSelector from '../components/reusables/PageNoSelector'
 
 const News = () => {
   return (
@@ -15,9 +16,18 @@ const News = () => {
                 <div className="news-main-wrp container-md">
                   <h2>Our News & Articles</h2>
                   <NewsGrid amount={9} />
-                  <div style={{"color": "red", "font-size": "55px", "display": "flex", "justify-content": "center"}}>123456</div>
+                  <div className="page-no-selectors">
+                    <PageNoSelector text="<" />
+                    <PageNoSelector text="1" active="true"/>
+                    <PageNoSelector text="2" />
+                    <PageNoSelector text="3" />
+                    <PageNoSelector text="..." />
+                    <PageNoSelector text="9" />
+                    <PageNoSelector text=">" />
+                  </div>
                 </div>
             </section>
+            
             <Newsletter />
         </main>
         <Footer />

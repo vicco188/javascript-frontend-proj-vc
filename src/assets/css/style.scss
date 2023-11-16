@@ -182,11 +182,11 @@ header {
             border: none;
             @media(min-width: $medium-breakpoint) {display: none;}
             z-index: 1;
-            .fa-xmark {
+            i {
                 color: $black-font-color;
-            }
-            .fa-bars {
-                color: $black-font-color;
+                    &.active {
+                    color: $grey-font-color;
+                }
             }
         }
         .header-logo {
@@ -257,8 +257,8 @@ header {
                 justify-content: space-between;
                 font-size:16px;
                 font-weight: 400;
-                .current-nav {font-weight: 500;}                
-                .current-nav, a:hover  { // underline nav words...
+                .active {font-weight: 500;}                
+                .active, a:hover  { // underline nav words...
                     position: relative;
                     &::before  {
                       content: ""; // dummy element 
@@ -1100,6 +1100,31 @@ main  {
                     grid-template-columns: repeat(auto-fit, minmax(200px, 420px));
                     
             }
+            .page-no-selectors {
+                display: flex;
+                gap: 9px;
+                justify-content: center;
+                padding: 78px 0 64px;
+                .page-no-selector {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 21px;
+                    font-weight: 500;
+                    color: $black-font-color;
+                    text-decoration: none;
+                    border: 1px solid #EAE9F2;
+                    border-radius: 5px;
+                    height: 38px;
+                    width: 38px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.active {
+                        background-color: $black-font-color;
+                        color: $white-font-color;
+                        border: none;
+                    }
+                }
+            }
         }
     }
 
@@ -1330,7 +1355,7 @@ main  {
                         @media(min-width: $small-breakpoint) {height: 160px;}
                         resize: none;   
                     }
-                    .error {g
+                    .error {
                         @media (min-width: $small-breakpoint) {
                             position: absolute;
                             top: 16px;
