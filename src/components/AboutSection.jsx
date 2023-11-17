@@ -28,9 +28,9 @@ const AboutSection = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.
                         </p>
                         <div className="about-content-buttons">
-                            {/* <Link to="/about" className="btn-generic btn-black">Learn More<i className="fa-regular fa-arrow-up-right"></i></Link> */}
-                            <PillButton color="yellow" url="/about" caption="Learn More" symbol="arrow" />
-                            {/* <Link to="#"><i className="fa-solid fa-play btn-generic btn-white"></i><span>Intro Video</span></Link> */}
+                            
+                            <PillButton color="black" url="/about" caption="Learn More" symbol="arrow" />
+                            
                             <PillButton color='white' symbol='play' url='#'/><Link to="#"><span>Intro Video</span></Link>
                         </div>
                     </div>

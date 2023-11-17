@@ -409,6 +409,7 @@ main .intro-section .intro-section-wrp .showcase-content {
     font-size: 96px;
     text-align: inherit;
     letter-spacing: 1px;
+    margin-right: -6px;
   }
 }
 main .intro-section .intro-section-wrp .showcase-content .showcase-paragraph {
@@ -1164,6 +1165,9 @@ main .about .about-wrp .about-content .about-content-buttons .btn-white {
   margin-left: 38px;
   margin-right: 16px;
 }
+main .about .about-wrp .about-content .about-content-buttons .btn-black {
+  color: #FFFFFF;
+}
 main .testimonials {
   background-color: #EDCF86;
   padding-top: 50px;
@@ -1372,7 +1376,7 @@ main .news-main .news-main-wrp .page-no-selectors {
   display: flex;
   gap: 9px;
   justify-content: center;
-  padding: 78px 0 64px;
+  padding: 78px 0 86px;
 }
 main .news-main .news-main-wrp .page-no-selectors .page-no-selector {
   font-family: "DM Sans", sans-serif;
