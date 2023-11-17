@@ -21,13 +21,22 @@
     .article-heading {
         grid-area: heading;
         h2 {
-            margin-top: 123px;
+            padding-top: 50px;
+            @media(min-width: $xlarge-breakpoint) {
+                padding-top: 123px;
+            }
+            max-width: 95vw;
+            margin: 0 10px;
+            @media(min-width: $small-breakpoint) {
+                margin: 0;
+            }
         }
         .article-byline {
             display: flex;
             justify-content: flex-start;
             gap: 24px;
             margin: 28px 0 0 0;
+            
             p {
                 margin: 0;
                 font-family: "DM Sans", sans-serif;
@@ -35,7 +44,7 @@
                 font-size: 20px;
                 color: $black-font-color;
             }
-            //#f9d783
+           
             i {
                 color: #f9d783;
                 align-self: center;
@@ -48,10 +57,15 @@
         img {
             width: 100%;
         }
-    
+        max-width: 95vw;
+        margin: 0 10px;
+        @media (min-width: $small-breakpoint) {
+                margin: 0;
+            }
 
         img {
             margin-bottom: 36px;
+            
         }
         p {
             margin-bottom: 30px;
@@ -73,7 +87,7 @@
         .article-category-buttons {
             display: flex;
             margin-top: 40px;
-            margin-bottom: 65px;
+            padding-bottom: 65px;
             .article-category-button {
                 height: 40px;
                 border-radius: 20px;
