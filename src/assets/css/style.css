@@ -55,7 +55,7 @@ h6 {
   font-size: 22px;
 }
 
-h7 {
+.h7 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1387,8 +1387,9 @@ main .news-main .news-main-wrp .page-no-selectors .page-no-selector {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 400ms;
 }
-main .news-main .news-main-wrp .page-no-selectors .page-no-selector.active {
+main .news-main .news-main-wrp .page-no-selectors .page-no-selector.active, main .news-main .news-main-wrp .page-no-selectors .page-no-selector:hover {
   background-color: #191919;
   color: #FFFFFF;
   border: none;
