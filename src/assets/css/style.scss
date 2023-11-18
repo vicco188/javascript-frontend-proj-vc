@@ -288,9 +288,7 @@ header {
     .mobile-menu {
         @media(min-width: $large-breakpoint) {display: none;}
         margin-top: -15px;
-        box-shadow: 0 0 15px 0 rgba(49, 49, 49, 0.274);
-        // border-top: $grey-border;
-        // border-bottom: $grey-border;
+        box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.25);
         z-index: 1;
         background-color: #e9e6e0;
 
@@ -299,7 +297,6 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // overflow: hidden;
         a {
             color: $black-font-color;
             text-decoration: none;
