@@ -4,7 +4,6 @@ import spiderweb from '../../assets/images/icon-spiderweb.svg';
 import design from '../../assets/images/icon-design.svg';
 import intelligence from '../../assets/images/icon-intelligence.svg';
 
-
 const iconMap = {
     thumbsup,
     spiderweb,

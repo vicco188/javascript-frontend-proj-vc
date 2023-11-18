@@ -1,6 +1,6 @@
-import React from 'react'
-import PillButton from './reusables/PillButton'
-import FeaturesCard from './reusables/FeaturesCard'
+import React from 'react';
+import PillButton from './reusables/PillButton';
+import FeaturesCard from './reusables/FeaturesCard';
 const Features = () => {
   return (
         <section className="features">
@@ -23,7 +23,7 @@ const Features = () => {
                 </div>
             </div>
         </section>
-  )
+  );
 }
 
-export default Features
+export default Features;

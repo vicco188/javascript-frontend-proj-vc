@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import IntroSection from '../components/IntroSection'
-import NewsGrid from '../components/reusables/NewsGrid'
-import Newsletter from '../components/Newsletter'
-import PageNoSelector from '../components/reusables/PageNoSelector'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import IntroSection from '../components/IntroSection';
+import NewsGrid from '../components/reusables/NewsGrid';
+import Newsletter from '../components/Newsletter';
+import PageNoSelector from '../components/reusables/PageNoSelector';
 
 const News = () => {
   return (
@@ -32,7 +32,7 @@ const News = () => {
         </main>
         <Footer />
     </>
-  )
+  );
 }
 
-export default News
+export default News;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ContactInfoCard = ({url, symbol, heading, textRowOne, textRowTwo}) => {
   return (
@@ -7,7 +7,7 @@ const ContactInfoCard = ({url, symbol, heading, textRowOne, textRowTwo}) => {
         <h6>{heading}</h6>
         <p>{textRowOne}<br />{textRowTwo}</p>
     </a>
-  )
+  );
 }
 
-export default ContactInfoCard
+export default ContactInfoCard;

@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import IntroSection from '../components/IntroSection'
-import ContactInfo from '../components/ContactInfo'
-import ContactVisitMap from '../components/ContactVisitMap'
-import ContactForm from '../components/ContactForm'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import IntroSection from '../components/IntroSection';
+import ContactInfo from '../components/ContactInfo';
+import ContactVisitMap from '../components/ContactVisitMap';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
         </main>
         <Footer />
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

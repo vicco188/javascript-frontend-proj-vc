@@ -1,6 +1,6 @@
-import React from 'react'
-import PillButton from './reusables/PillButton'
-import ProjectCard from './reusables/ProjectCard'
+import React from 'react';
+import PillButton from './reusables/PillButton';
+import ProjectCard from './reusables/ProjectCard';
 
 const Projects = () => {
   return (
@@ -22,6 +22,6 @@ const Projects = () => {
       </div>
     </section>
   )
-}
+};
 
-export default Projects
+export default Projects;

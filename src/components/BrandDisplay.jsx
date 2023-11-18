@@ -1,9 +1,9 @@
-import React from 'react'
-import paperzLogo from '../assets/images/paperz-logo.svg'
-import dorfusLogo from '../assets/images/dorfus-logo.svg'
-import martinoLogo from '../assets/images/martino-logo.svg'
-import squareLogo from '../assets/images/square-logo.svg'
-import gobonaLogo from '../assets/images/gobona-logo.svg'
+import React from 'react';
+import paperzLogo from '../assets/images/paperz-logo.svg';
+import dorfusLogo from '../assets/images/dorfus-logo.svg';
+import martinoLogo from '../assets/images/martino-logo.svg';
+import squareLogo from '../assets/images/square-logo.svg';
+import gobonaLogo from '../assets/images/gobona-logo.svg';
 
 const BrandDisplay = () => {
   return (
@@ -16,7 +16,7 @@ const BrandDisplay = () => {
             <img src={gobonaLogo} alt="Gobona" />
         </div>
     </section>
-  )
+  );
 }
 
-export default BrandDisplay
+export default BrandDisplay;

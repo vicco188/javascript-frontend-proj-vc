@@ -28,9 +28,7 @@ const AboutSection = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.
                         </p>
                         <div className="about-content-buttons">
-                            
                             <PillButton color="black" url="/about" caption="Learn More" symbol="arrow" />
-                            
                             <PillButton color='white' symbol='play' url='#'/><Link to="#"><span>Intro Video</span></Link>
                         </div>
                     </div>

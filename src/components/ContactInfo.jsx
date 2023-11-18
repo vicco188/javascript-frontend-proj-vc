@@ -1,5 +1,5 @@
-import React from 'react'
-import ContactInfoCard from './reusables/ContactInfoCard'
+import React from 'react';
+import ContactInfoCard from './reusables/ContactInfoCard';
 
 const ContactInfo = () => {
   return (
@@ -10,7 +10,7 @@ const ContactInfo = () => {
             <ContactInfoCard symbol="envelope" heading="Email us" textRowOne="info@crito.com" textRowTwo="support@crito.com" url="mailto:info@crito.com" />
         </div>
     </section>
-  )
+  );
 }
 
-export default ContactInfo
+export default ContactInfo;

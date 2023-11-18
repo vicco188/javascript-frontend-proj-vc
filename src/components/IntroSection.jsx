@@ -1,6 +1,6 @@
-import React from 'react'
-import squiggle2 from '../assets/images/squiggle-2.svg'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import squiggle2 from '../assets/images/squiggle-2.svg';
+import { Link } from 'react-router-dom';
 
 const IntroSection = ({pageName, heading, txt}) => {
   return (
@@ -17,7 +17,7 @@ const IntroSection = ({pageName, heading, txt}) => {
                 </div>
                 <img src={squiggle2} alt="decoration" className="intro-white-squiggle" />
             </section>
-  )
+  );
 }
 
-export default IntroSection
+export default IntroSection;

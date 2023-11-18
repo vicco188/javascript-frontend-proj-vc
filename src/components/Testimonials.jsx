@@ -1,7 +1,6 @@
 import React from 'react';
 import TestimonialCard from './reusables/TestimonialCard';
 
-
 const Testimonials = () => {
     const testimonialList = [
         {

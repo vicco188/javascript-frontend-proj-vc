@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import logotype from '../assets/images/logo.svg'
-import { Link, NavLink } from 'react-router-dom'
-import PillButton from './reusables/PillButton'
-import MobileMenu from './mobileMenu'
+import React, { useState } from 'react';
+import logotype from '../assets/images/logo.svg';
+import { Link, NavLink } from 'react-router-dom';
+import PillButton from './reusables/PillButton';
+import MobileMenu from './mobileMenu';
 
 const Header = () => {
     const [menuShown, setMenuShown] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
 
             }
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

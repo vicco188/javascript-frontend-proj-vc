@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { dateToDay, dateToMonth, dateToYear } from '../assets/script/dateFunctions';
 import { useNews } from '../contexts/NewsContext';
@@ -28,8 +28,8 @@ const ArticleSidebar = () => {
                         }
                     </Link>
                 :
-                    '')
-            
+                    ''
+                )
             ))}
         </div>
         <div className="article-categories-box" >
@@ -41,10 +41,8 @@ const ArticleSidebar = () => {
             <Link className="category-post">Business - <span>35 posts</span></Link>
             <Link className="category-post">Education - <span>14 posts</span></Link>
         </div>
-
-
     </div>
-  )
+  );
 }
 
-export default ArticleSidebar
+export default ArticleSidebar;

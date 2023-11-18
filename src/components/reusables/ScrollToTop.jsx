@@ -9,7 +9,7 @@ const ScrollToTop = () => {
     },[location.pathname]); 
     return (
         null
-    )
+    );
 }
 
 export default ScrollToTop;

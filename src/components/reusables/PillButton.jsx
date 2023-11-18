@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PillButton = ({caption, url, color, symbol}) => {
     const buttonClasses=`btn-generic btn-${color}`;
@@ -16,10 +16,8 @@ const PillButton = ({caption, url, color, symbol}) => {
             break;
     }
     return (
-    
         <Link to={url} className={buttonClasses}>{caption}{faTag}</Link>
-    
-  )
+    );
 }
 
-export default PillButton
+export default PillButton;

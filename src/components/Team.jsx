@@ -1,5 +1,5 @@
-import React from 'react'
-import TeamMemberCard from './reusables/TeamMemberCard'
+import React from 'react';
+import TeamMemberCard from './reusables/TeamMemberCard';
 
 const Team = () => {
     return (
@@ -29,7 +29,7 @@ const Team = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Team
+export default Team;

@@ -1,5 +1,5 @@
-import React from 'react'
-import PillButton from './reusables/PillButton'
+import React from 'react';
+import PillButton from './reusables/PillButton';
 import NewsGrid from './reusables/NewsGrid';
 
 const NewsSection = ({bgColor}) => {
@@ -29,7 +29,7 @@ const NewsSection = ({bgColor}) => {
                     </div>
                 </div>
             </section>
-    )
+    );
 }
 
-export default NewsSection
+export default NewsSection;

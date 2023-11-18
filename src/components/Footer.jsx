@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import logotypeWhite from '../assets/images/logotype-white.svg';
 import footerGreySquiggle from '../assets/images/footer-grey-squiggle.svg';
 import { Link } from 'react-router-dom';
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
         </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

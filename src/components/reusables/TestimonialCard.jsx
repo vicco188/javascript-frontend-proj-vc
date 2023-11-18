@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TestimonialCard = ({rating, testimonial, testifierName, jobTitle, picture}) => {
     
@@ -17,7 +17,7 @@ const TestimonialCard = ({rating, testimonial, testifierName, jobTitle, picture}
                 <div className="testifier-title">{jobTitle}</div>
             </div>
         </div>
-    )
+    );
 }
 
-export default TestimonialCard
+export default TestimonialCard;

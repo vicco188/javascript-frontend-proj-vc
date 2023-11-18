@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../../assets/css/NewsCard.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../../assets/css/NewsCard.css';
 
 const NewsCard = ({image, category, heading, intro, day, month, url}) => {
     return (
@@ -16,7 +16,7 @@ const NewsCard = ({image, category, heading, intro, day, month, url}) => {
                 <p>{month}</p>
             </div>
         </Link>
-    )
+    );
 }
 
-export default NewsCard
+export default NewsCard;

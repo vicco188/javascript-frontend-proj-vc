@@ -9,14 +9,14 @@ const ArticleSection = ({id}) => {
     useEffect(() => {
         getNewsArticle(id);
         return () => clearArticle();
-    },[id])
+    },[id]);
 
     const {newsArticle, getNewsArticle, clearArticle} = useNews();
-
-    const fillOutText1="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna."
+    const fillOutText1="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.";
     const fillOutText2="Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy."; 
     const fillOutText3="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.";
     const fillOutText4="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.";
+    
     return (
         <section className="article-section">
             <div className="container article-section-wrp">
@@ -42,11 +42,9 @@ const ArticleSection = ({id}) => {
                     </div>
                 </div>
                 <ArticleSidebar />
-                
-
             </div>
         </section>
-    )
+    );
 }
 
-export default ArticleSection
+export default ArticleSection;

@@ -23,6 +23,6 @@ const FeaturesCard = ({ icon, heading, caption }) => {
       <p>{caption}</p>
     </div>
   );
-};
+}
 
 export default FeaturesCard;

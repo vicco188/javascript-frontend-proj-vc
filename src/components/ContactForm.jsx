@@ -4,17 +4,17 @@ import * as Yup from 'yup';
 
 const ContactForm = () => {
 const [messageSent, setMessageSent] = useState(false);
-const emailRegex=new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/
-);
+const emailRegex=new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/);
 const errormessageName='Please enter at least 2 characters';
-const errormessageEmail='Please enter a valid email address'
-const errormessageTextarea='Please enter at least 8 characters'
+const errormessageEmail='Please enter a valid email address';
+const errormessageTextarea='Please enter at least 8 characters';
+
 const contForm = useFormik({
-  initialValues: {
-    name: '',
-    email: '',
-    message: ''
-  },
+    initialValues: {
+      name: '',
+      email: '',
+      message: ''
+    },
 
   validationSchema: Yup.object( {
     name: Yup.string().required(errormessageName).min(2, errormessageName),
@@ -36,7 +36,7 @@ const contForm = useFormik({
       alert('Something went wrong, please try again!')
     }
   }
-})
+});
 
   return (
     <section className="contact-form">
@@ -72,7 +72,7 @@ const contForm = useFormik({
 
         </div>
     </section>
-  )
+  );
 }
 
-export default ContactForm
+export default ContactForm;

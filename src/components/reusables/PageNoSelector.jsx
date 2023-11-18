@@ -6,5 +6,4 @@ const PageNoSelector = ({text, active}) => {
         <Link className={`page-no-selector${active ? ' active' : ''}`}>{text}</Link>
     )
 }
-
 export default PageNoSelector;

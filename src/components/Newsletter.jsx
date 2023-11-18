@@ -15,7 +15,7 @@ const Newsletter = () => {
         </div>
         <img src={squiggle4} alt="decoration" className="squiggle" />
     </section>
-  )
+  );
 }
 
-export default Newsletter
+export default Newsletter;

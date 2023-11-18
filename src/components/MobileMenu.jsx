@@ -1,6 +1,6 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import PillButton from './reusables/PillButton'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import PillButton from './reusables/PillButton';
 
 const MobileMenu = () => {
   return (
@@ -23,8 +23,8 @@ const MobileMenu = () => {
             <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
             <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
         </div>
-</div>
-  )
+    </div>
+  );
 }
 
-export default MobileMenu
+export default MobileMenu;

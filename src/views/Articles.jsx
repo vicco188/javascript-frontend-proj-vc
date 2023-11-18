@@ -1,11 +1,11 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import IntroSection from '../components/IntroSection';
 import ArticleSection from '../components/ArticleSection';
 import NewsSection from '../components/NewsSection';
-import '../assets/css/articles.css'
+import '../assets/css/articles.css';
 
 
 const Articles = () => {
@@ -21,7 +21,7 @@ const Articles = () => {
             <Footer />
             
         </>
-    )
+    );
 }
 
-export default Articles
+export default Articles;

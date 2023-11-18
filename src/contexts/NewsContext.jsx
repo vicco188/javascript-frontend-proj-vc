@@ -32,5 +32,5 @@ export const NewsProvider = ({children}) => {
         <NewsContext.Provider value={{allNews, getNewsArticle, newsArticle, clearArticle}}>
             {children}
         </NewsContext.Provider>
-    )
+    );
 }

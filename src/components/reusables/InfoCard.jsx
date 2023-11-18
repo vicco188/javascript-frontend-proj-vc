@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PillButton from './PillButton';
 
-
 const InfoCard = ({url, caption, heading}) => {
   return (
     <div className="info-card">

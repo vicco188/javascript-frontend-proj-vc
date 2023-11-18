@@ -1,7 +1,7 @@
-import React from 'react'
-import squiggle3 from '../assets/images/squiggle-3.svg'
-import PillButton from './reusables/PillButton'
-import InfoCard from './reusables/InfoCard'
+import React from 'react';
+import squiggle3 from '../assets/images/squiggle-3.svg';
+import PillButton from './reusables/PillButton';
+import InfoCard from './reusables/InfoCard';
 
 const Services = () => {
   return (
@@ -25,7 +25,7 @@ const Services = () => {
                 <img src={squiggle3} alt="decoration" />
             </div>
         </section>
-  )
+  );
 }
 
-export default Services
+export default Services;

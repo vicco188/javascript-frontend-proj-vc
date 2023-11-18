@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TeamMemberCard = ({memberName, jobTitle, picture}) => {
     return (
@@ -7,7 +7,7 @@ const TeamMemberCard = ({memberName, jobTitle, picture}) => {
             <h6>{memberName}</h6>
             <p>{jobTitle}</p>
         </div>
-    )
+    );
 }
 
-export default TeamMemberCard
+export default TeamMemberCard;
