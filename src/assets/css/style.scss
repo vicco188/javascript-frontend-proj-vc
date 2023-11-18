@@ -286,7 +286,7 @@ header {
     }
     
     .mobile-menu {
-        @media(min-width: $large-breakpoint) {display: none;}
+        @media(min-width: $medium-breakpoint) {display: none;}
         margin-top: -15px;
         box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.25);
         z-index: 1;
