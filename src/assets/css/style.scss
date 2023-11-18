@@ -285,20 +285,21 @@ header {
         }
     }
     
-    // overflow: hidden;
     .mobile-menu {
-        @media(min-width: $large-breakpoint) {display: none;} //DEBUG ONLY
+        @media(min-width: $large-breakpoint) {display: none;}
         margin-top: -15px;
-        border-top: $grey-border;
-        border-bottom: $grey-border;
+        box-shadow: 0 0 15px 0 rgba(49, 49, 49, 0.274);
+        // border-top: $grey-border;
+        // border-bottom: $grey-border;
         z-index: 1;
-        background-color: $grey-bg;
+        background-color: #e9e6e0;
+
         padding: 70px 50px;
         font-size: 1.3em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: hidden;
+        // overflow: hidden;
         a {
             color: $black-font-color;
             text-decoration: none;

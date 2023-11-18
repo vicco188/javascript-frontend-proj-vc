@@ -322,16 +322,14 @@ header .header-wrp .header-bottom nav a:hover::before {
 }
 header .mobile-menu {
   margin-top: -15px;
-  border-top: 2px solid #DAD9D3;
-  border-bottom: 2px solid #DAD9D3;
+  box-shadow: 0 0 15px 0 rgba(49, 49, 49, 0.274);
   z-index: 1;
-  background-color: #F0EFE9;
+  background-color: #e9e6e0;
   padding: 70px 50px;
   font-size: 1.3em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 @media (min-width: 992px) {
   header .mobile-menu {
